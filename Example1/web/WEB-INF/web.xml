@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+           version="3.0">
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DownloadMaterialServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.DownloadMaterialServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteMaterialServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.DeleteMaterialServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.DeleteUserServlet</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>UpdateMaterialServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.UpdateMaterialServlet</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.UpdateUserServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>AddMaterialServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.AddMaterialServlet</servlet-class>
+    </servlet>
+
+
+    <servlet>
+        <servlet-name>AddUserServlet</servlet-name>
+        <servlet-class>com.hrm.servlet.AddUserServlet</servlet-class>
+    </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <servlet-mapping>
+        <servlet-name>AddMaterialServlet</servlet-name>
+        <url-pattern>/AddMaterialServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DownloadMaterialServlet</servlet-name>
+        <url-pattern>/DownloadMaterialServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddUserServlet</servlet-name>
+        <url-pattern>/AddUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateMaterialServlet</servlet-name>
+        <url-pattern>/UpdateMaterialServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>UpdateUserServlet</servlet-name>
+        <url-pattern>/UpdateUserServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DeleteMaterialServlet</servlet-name>
+        <url-pattern>/DeleteMaterialServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>DeleteUserServlet</servlet-name>
+        <url-pattern>/DeleteUserServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>
+            index.html
+        </welcome-file>
+    </welcome-file-list>
+</web-app>
